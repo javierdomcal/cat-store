@@ -1,0 +1,434 @@
+/* Reset default styles */
+body, figure, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Add custom styles for elements */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+/* CSS for the header */
+#header {
+    background-color: #333; /* Set the background color */
+    padding: 10px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#header-img {
+    text-decoration: none; /* Remove default text decoration for logo link */
+    color: #fff; /* Set text color to white */
+    font-size: 24px; /* Set font size for logo */
+    font-weight: bold; /* Set font weight for logo */
+}
+
+#header-img img {
+    width: 80px; /* Set width for the logo image */
+    height: auto; /* Allow the height to adjust proportionally */
+}
+
+
+#nav-bar ul {
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items to the start and end of the container */
+    margin: 0; /* Remove margin for the list */
+    padding: 0; /* Remove padding for the list */
+}
+
+#nav-bar li {
+    margin-right: 20px; /* Add margin between each list item */
+}
+
+#nav-bar a {
+    text-decoration: none; /* Remove default text decoration for nav links */
+    color: #fff; /* Set text color to white */
+    font-size: 16px; /* Set font size for nav links */
+}
+
+#nav-bar a:hover {
+    color: #ffcccb; /* Change text color on hover */
+}
+
+
+/* Hero styles */
+/* Styles for Hero Section */
+/* Hero section */
+#hero {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#left-video-container {
+    left: 0;
+}
+
+#left-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#hero-content {
+    z-index: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+#hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#right-video-container {
+    right: 0;
+}
+#right-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Features styles */
+#features {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-description {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 80px;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    text-align: center;
+}
+
+.feature-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+
+/* Testimonials styles */
+/* Testimonials Section */
+#testimonials {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonial-quote {
+    font-size: 16px;
+    color: #777777;
+}
+
+
+
+/* Pricing styles */
+#pricing {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    flex-basis: 300px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Add position relative for banner placement */
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.cat-image {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.cat-description {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.cat-price {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Contact styles */
+/* Contact Section */
+#contact {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-subheading {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#email {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submit {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer styles */
+#footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 300px;
+    height: auto;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    text-decoration: none; /* Remove default text decoration for nav links */
+    color: #fff; /* Set text color to white */
+    font-size: 16px; /* Set font size for nav links */
+}
+
+.footer-links li a:hover {
+    color: #ffcccb; /* Set text color to white */
+}
+
+.footer-social {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-disclaimer {
+    margin-top: 20px;
+}
+
